@@ -60,6 +60,7 @@ const NewTicket = () => {
           <label htmlFor="email">Customer Email</label>
           <input type="text" className="form-control" value={email} disabled />
         </div>
+        
 
         <form onSubmit={onSubmit}>
           <div className="form-group">

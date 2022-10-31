@@ -12,7 +12,7 @@ const Register = () => {
     name: "",
     email: "",
     password: "",
-    password2: "",
+    password2: ""
   });
 
   const { name, email, password, password2 } = formData;
@@ -40,7 +40,7 @@ const Register = () => {
   const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     }));
   };
 
@@ -53,7 +53,7 @@ const Register = () => {
       const userData = {
         name,
         email,
-        password,
+        password
       };
       dispatch(register(userData));
     }

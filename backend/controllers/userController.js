@@ -44,7 +44,6 @@ const registerUser = asyncHandler(async (req, res) => {
       res.status(400)
       throw new error('Invalid user data')
    }
-   res.send('Register Route')
 })
 
 // @description Login a user
